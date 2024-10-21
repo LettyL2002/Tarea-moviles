@@ -1,0 +1,3 @@
+def guardar_opinion(nombre_plato, opinion):
+    with open('opiniones.txt', 'a') as f:
+        f.write(f"{nombre_plato}: {opinion}\n")

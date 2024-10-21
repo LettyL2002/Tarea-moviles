@@ -1,0 +1,7 @@
+import csv
+
+def guardar_restaurante(nombre, direccion, telefono):
+    with open('restaurantes.csv', 'a', newline='') as f:
+        writer = csv.writer(f)
+        writer.writerow([nombre, direccion, telefono])
+

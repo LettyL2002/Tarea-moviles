@@ -1,0 +1,4 @@
+def guardar_menu_dia(dia, menu):
+    with open('menu_diario.txt', 'a') as f:
+        f.write(f"{dia}: {', '.join(menu)}\n")
+

@@ -1,0 +1,12 @@
+import json
+
+def guardar_receta(nombre, ingredientes, instrucciones):
+    receta = {
+        'nombre': nombre,
+        'ingredientes': ingredientes,
+        'instrucciones': instrucciones
+    }
+    
+    with open('recetas.json', 'a') as f:
+        f.write(json.dumps(receta) + "\n")
+
